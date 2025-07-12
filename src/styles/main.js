@@ -27,6 +27,7 @@ function exibeElementoDoHeader() {
     header.classList.remove('header--is-hidden');
 }
 
+//Seção de atrações, programacao das abas
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function (botao) {
             const abaAlvo = botao.target.dataset.tabButton;
@@ -39,6 +40,7 @@ function exibeElementoDoHeader() {
         });
     }
 
+    //Seção FAQ, accordion
     for (let i = 0; i < questions.length; i++) {
         questions[i].addEventListener('click', abreOuFechaResposta);
     }
